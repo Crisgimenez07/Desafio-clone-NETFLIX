@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base: #fc6b0a;
+    --base2: #000000;
+}
+
+/*Corpo*/
+
+body {
+    background: var(--base);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .logo {
+    font-size: 40px;
+    color: var(--base2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--base2);
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/*Menu filme*/
+
+.filme-principal {
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/cartaz.jpg');
+
+    background-size: cover;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.filme-principal .sinopse {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: flex-end;
+}
+
+.filme-principal .titulo {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10%;
+}
+
+.botao {
+    padding: 20px 27px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+    border: none;
+
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 80%;
+}
+
+.box-series {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.selecao-series {
+    margin-top: 8px;
+}
+
+.selecao-filmes {
+    margin-top: 8px;
+}
+
+.selecao-series h3,
+.selecao-filmes h3 {
+    font-size: 20px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
